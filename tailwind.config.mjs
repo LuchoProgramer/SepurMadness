@@ -8,8 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
+        naranja: "#ff760f",
+        negro: "#000000",
+        blanco: "#ffffff",
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      screens: {
+        '4k': '2560px',  // Quiebre para pantallas 4K
       },
     },
   },
