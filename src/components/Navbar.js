@@ -81,9 +81,7 @@ const Navbar = () => {
                 </div>
                 <div className="flex flex-col space-y-4 mt-16"> {/* Aumenté el margen superior aquí */}
                     <Link
-                        href="/nosotros"
-                        className="inline-block px-6 py-3 mt-4 text-lg font-semibold text-white bg-transparent border-2 border-white rounded-full hover:bg-orange-500 hover:text-white transition-colors duration-300 text-center"
-                    >
+                        href="/nosotros" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
                         Nosotros
                     </Link>
                     <Link href="/servicios" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
