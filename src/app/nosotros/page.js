@@ -1,11 +1,13 @@
-import Navbar from '@/components/Navbar';  // Asegúrate de importar el componente de Navbar
-import FormularioContacto from '@/components/FormularioContacto';  // Asegúrate de importar el formulario de contacto
+import Nosotros from '@/components/Nosotros';
+import Navbar from '@/components/Navbar';
+import Contactanos from '@/components/Contactanos';  // Asegúrate de importar el componente de Contactanos
 
-export default function ContactoPage() {
+export default function NosotrosPage() {
     return (
         <div>
             <Navbar />
-            <FormularioContacto />  {/* Aquí agregas el formulario de contacto */}
+            <Nosotros />
+            <Contactanos />  {/* Aquí se agrega la sección de "Contáctanos" */}
         </div>
     );
 }
