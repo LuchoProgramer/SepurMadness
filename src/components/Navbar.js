@@ -63,7 +63,7 @@ const Navbar = () => {
                         <Link href="#store" className="hover:text-naranja transition duration-300">
                             Store
                         </Link>
-                        <Link href="#contacto" className="hover:text-naranja transition duration-300">
+                        <Link href="/contacto" className="hover:text-naranja transition duration-300">
                             Contacto
                         </Link>
                     </div>
@@ -90,7 +90,7 @@ const Navbar = () => {
                     <Link href="#store" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
                         Store
                     </Link>
-                    <Link href="#contacto" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
+                    <Link href="/contacto" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
                         Contacto
                     </Link>
                 </div>
