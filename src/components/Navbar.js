@@ -1,7 +1,7 @@
 'use client';  // Agrega esta línea al inicio del archivo
 
 import { useState } from 'react';
-import { FaInstagram, FaLinkedin, FaFacebook, FaBars, FaTimes } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaFacebook, FaBars, FaTimes, FaPlus } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -24,7 +24,6 @@ const Navbar = () => {
                         <FaFacebook className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-6 xl:h-6 4k:w-16 4k:h-16 text-white hover:text-naranja transition duration-300 dark:text-black dark:hover:text-naranja bg-black bg-opacity-50 rounded-full p-1" />
                     </a>
                 </div>
-
 
                 {/* Logo centrado con margen izquierdo (responsive) */}
                 <div className="flex justify-center items-center relative sm:left-[10px] md:left-[25px] lg:left-[170px] z-50">
@@ -60,11 +59,16 @@ const Navbar = () => {
                         <Link href="/servicios" className="hover:text-naranja transition duration-300">
                             Servicios
                         </Link>
-                        <Link href="#store" className="hover:text-naranja transition duration-300">
+                        <Link href="/store" className="hover:text-naranja transition duration-300">
                             Store
                         </Link>
+                        {/* Nueva opción "Contenido" */}
+                        <Link href="/contenido" className="hover:text-naranja transition duration-300">
+                            Contenido
+                        </Link>
+                        {/* Botón de "+" redirigiendo a Contacto */}
                         <Link href="/contacto" className="hover:text-naranja transition duration-300">
-                            Contacto
+                            <FaPlus className="w-6 h-6 text-white" />
                         </Link>
                     </div>
                 </div>
@@ -79,7 +83,7 @@ const Navbar = () => {
                         <FaTimes className="w-6 h-6 text-naranja" />
                     </button>
                 </div>
-                <div className="flex flex-col space-y-4 mt-16"> {/* Aumenté el margen superior aquí */}
+                <div className="flex flex-col space-y-4 mt-16">
                     <Link
                         href="/nosotros" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
                         Nosotros
@@ -87,15 +91,20 @@ const Navbar = () => {
                     <Link href="/servicios" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
                         Servicios
                     </Link>
-                    <Link href="#store" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
+                    <Link href="/store" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
                         Store
                     </Link>
+                    {/* Nueva opción "Contenido" en el menú móvil */}
+                    <Link href="/contenido" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
+                        Contenido
+                    </Link>
+                    {/* Botón de "+" redirigiendo a Contacto */}
                     <Link href="/contacto" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
-                        Contacto
+                        <FaPlus className="w-6 h-6 text-naranja" />
                     </Link>
                 </div>
             </div>
-        </nav >
+        </nav>
     );
 };
 
