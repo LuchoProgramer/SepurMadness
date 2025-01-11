@@ -26,7 +26,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Logo centrado con margen izquierdo (responsive) */}
-                <div className="flex justify-center items-center relative sm:left-[10px] md:left-[25px] lg:left-[170px] z-50">
+                <div className="flex justify-center items-center relative sm:left-[10px] md:left-[20px] lg:left-[170px] xl:left-[200px] 2xl:left-[450px] z-50">
                     <Link href="/">
                         <Image
                             src="https://res.cloudinary.com/dltfsttr7/image/upload/v1734738512/sepurmadness_2020_naranja_wo9y4i_c_crop_w_400_h_225_ar_16_9_qvvfv0.png"

@@ -49,17 +49,26 @@ const StorePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {productos.map((producto) => (
                     <div key={producto.id} className="border p-4 shadow-md rounded-lg">
-                        <img
-                            src={producto.imagen}
-                            alt={producto.nombre}
-                            className="w-full h-48 object-cover rounded-lg"
-                        />
+                        {/* 🌟 Imágenes del producto (3 imágenes grandes a lo largo de la tarjeta) */}
+                        <div className="w-full grid grid-cols-3 gap-4">
+                            {producto.imagenes?.slice(0, 3).map((imgUrl, idx) => (
+                                <img
+                                    key={idx}
+                                    src={imgUrl}
+                                    alt={`Imagen ${idx + 1}`}
+                                    className="w-full h-64 object-cover rounded-lg"
+                                />
+                            ))}
+                        </div>
+
+                        {/* 📄 Datos del producto */}
                         <h2 className="text-xl font-bold mt-2">{producto.nombre}</h2>
                         <p className="text-gray-600">{producto.descripcion}</p>
                         <p className="text-lg font-bold mt-2">${producto.precio}</p>
                     </div>
                 ))}
             </div>
+
         </div>
     );
 };
