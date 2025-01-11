@@ -46,29 +46,33 @@ const StorePage = () => {
             </div>
 
             {/* 🛍 LISTADO DE PRODUCTOS */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
                 {productos.map((producto) => (
                     <div key={producto.id} className="border p-4 shadow-md rounded-lg">
                         {/* 🌟 Imágenes del producto (3 imágenes grandes a lo largo de la tarjeta) */}
-                        <div className="w-full grid grid-cols-3 gap-4">
+                        <div className="flex gap-4">
                             {producto.imagenes?.slice(0, 3).map((imgUrl, idx) => (
                                 <img
                                     key={idx}
                                     src={imgUrl}
                                     alt={`Imagen ${idx + 1}`}
-                                    className="w-full h-64 object-cover rounded-lg"
+                                    className="w-1/3 h-64 object-cover rounded-lg"
                                 />
                             ))}
                         </div>
-
                         {/* 📄 Datos del producto */}
-                        <h2 className="text-xl font-bold mt-2">{producto.nombre}</h2>
-                        <p className="text-gray-600">{producto.descripcion}</p>
-                        <p className="text-lg font-bold mt-2">${producto.precio}</p>
+                        <h2 className="text-xl font-bold mt-2 text-center hover:text-[#ffdd56] transition-all">
+                            {producto.nombre}
+                        </h2>
+                        <p className="text-gray-600 text-center hover:text-[#ffdd56] transition-all">
+                            {producto.descripcion}
+                        </p>
+                        <p className="text-lg font-bold mt-2 text-center hover:text-[#ffdd56] transition-all">
+                            ${producto.precio}
+                        </p>
                     </div>
                 ))}
             </div>
-
         </div>
     );
 };
