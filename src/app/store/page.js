@@ -73,6 +73,14 @@ const StorePage = () => {
                     </div>
                 ))}
             </div>
+            {/* 🌅 Imagen al final */}
+            <div className="w-full mt-8">
+                <img
+                    src="https://res.cloudinary.com/dbbukhtz5/image/upload/v1736558055/pie_de_pagina_wakan_chr9fr.jpg"
+                    alt="Pie de página"
+                    className="w-full h-auto object-cover"
+                />
+            </div>
         </div>
     );
 };
