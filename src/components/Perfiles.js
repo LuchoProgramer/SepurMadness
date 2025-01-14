@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import PerfilCard from "./PerfilCard"; // Importar el componente PerfilCard
 
-const Contenido = () => {
+const Perfiles = () => {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
@@ -40,4 +40,4 @@ const Contenido = () => {
     );
 };
 
-export default Contenido;
+export default Perfiles;

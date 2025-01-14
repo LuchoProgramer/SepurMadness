@@ -1,4 +1,4 @@
-import Contenido from '@/components/Contenido';
+import Contenido from '@/components/Perfiles';
 import Navbar from '@/components/Navbar';
 
 export default function ContactoPage() {

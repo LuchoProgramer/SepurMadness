@@ -2,7 +2,7 @@ const Servicios = () => {
     return (
         <section className="w-full bg-gray-800 py-20 relative">
             <div className="text-center text-white mb-12">
-                <h2 className="text-2xl md:text-3xl font-bold">Nuestros Servicios</h2>
+                <h2 className="text-2xl md:text-3xl font-bold pt-4">Nuestros Servicios</h2>
                 <p className="text-base md:text-lg max-w-3xl mx-auto mt-4">
                     Descubre cómo nuestras soluciones pueden ayudarte a alcanzar el éxito con servicios innovadores y a la medida de tus necesidades.
                 </p>

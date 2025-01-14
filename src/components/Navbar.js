@@ -63,8 +63,8 @@ const Navbar = () => {
                             Store
                         </Link>
                         {/* Nueva opción "Contenido" */}
-                        <Link href="/contenido" className="hover:text-naranja transition duration-300">
-                            Contenido
+                        <Link href="/proyectos" className="hover:text-naranja transition duration-300">
+                            Proyectos
                         </Link>
                         {/* Botón de "+" redirigiendo a Contacto */}
                         <Link href="/contacto" className="hover:text-naranja transition duration-300">
