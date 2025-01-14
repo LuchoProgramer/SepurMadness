@@ -1,6 +1,6 @@
 const Servicios = () => {
     return (
-        <section className="w-full bg-gray-800 py-20">
+        <section className="w-full bg-gray-800 py-20 relative">
             <div className="text-center text-white mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold">Nuestros Servicios</h2>
                 <p className="text-base md:text-lg max-w-3xl mx-auto mt-4">
@@ -9,70 +9,33 @@ const Servicios = () => {
             </div>
 
             {/* Sección de Servicios */}
-            <div className="flex flex-wrap justify-center gap-6 px-6">
-                {/* Columna 1 */}
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">SEO</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Python</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">JS</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Django</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Animación 2D</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">React</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Marcas Personales</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Inteligencia Artificial</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Concept Art con IA</h3>
-                </div>
-
-                {/* Columna 2 */}
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Producción Audiovisual</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Agentes Personalizados IA</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Charlas de Tecnología</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Postproducción VFX-SFX</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Contenido Para Redes Sociales</h3>
-                </div>
-
-                <div className="w-full sm:w-1/2 lg:w-1/4 text-center bg-gray-900 p-4 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
-                    <h3 className="text-lg font-semibold text-white mb-2">Fotografía Publicitaria</h3>
-                </div>
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+                {/* Tarjetas de servicios */}
+                {[
+                    "Desarrollo Web & Apps",
+                    "Animación 2D & Motion",
+                    "Consultoría & Tutorías",
+                    "Marca Personal & Branding",
+                    "Inteligencia Artificial",
+                    "Concept Art con IA",
+                    "Producción Audiovisual",
+                    "Agentes IA Personalizados",
+                    "Charlas & Workshops",
+                    "Postproducción VFX-SFX",
+                    "Gestión de Redes Sociales",
+                    "Fotografía Publicitaria"
+                ].map((servicio, index) => (
+                    <div
+                        key={index}
+                        className="bg-gray-900 p-6 rounded-lg shadow-lg transition duration-300 hover:scale-105 hover:bg-gray-700"
+                    >
+                        <h3 className="text-lg font-semibold text-white">{servicio}</h3>
+                    </div>
+                ))}
             </div>
+
+            {/* Gradiente al final de la sección */}
+            <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black via-transparent to-transparent"></div>
         </section>
     );
 };

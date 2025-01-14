@@ -1,6 +1,6 @@
 const Contactanos = () => {
     return (
-        <section className="relative w-full h-screen bg-gradient-to-r from-black via-gray-800 to-black flex items-center justify-center px-6 py-12">
+        <section className="relative w-full h-screen bg-gradient-to-b from-black via-gray-800 to-black flex items-center justify-center px-6 py-12">
             {/* Contenedor flex con solo la columna de texto */}
             <div className="w-full h-full flex flex-col justify-center items-center text-white text-center space-y-6 z-10">
                 <h1 className="text-4xl md:text-6xl font-bold animate__animated animate__fadeIn animate__delay-1s">
@@ -18,9 +18,9 @@ const Contactanos = () => {
                     Enviar un correo
                 </a>
             </div>
-
         </section>
     );
 };
 
 export default Contactanos;
+
