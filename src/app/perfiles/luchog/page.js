@@ -24,7 +24,7 @@ const LuchoG = () => {
                     />
 
                     <p className="text-lg text-gray-300 mb-6">
-                        Soy <span className="font-bold text-orange-500">tecnólogo en fotografía y sonido</span> para cine y TV con más de una década de experiencia.
+                        Soy tecnólogo en fotografía y sonido para cine y TV con más de una década de experiencia.
                         He trabajado en proyectos como <strong>Enchufe TV</strong> (diseño y grabación de sonido directo) y
                         <strong> Desde Adentro</strong> de Sebastián Cordero (camarógrafo y mezcla final).
                         También fui productor audiovisual en <strong>Farmaenlace</strong>, aportando soluciones creativas en el ámbito corporativo,

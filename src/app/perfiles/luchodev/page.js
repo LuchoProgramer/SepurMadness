@@ -24,7 +24,7 @@ const LuchoDev = () => {
                     />
 
                     <p className="text-lg text-gray-300 mb-6">
-                        Soy **Luchodev**, un viajero apasionado por la tecnología. Mi amor por el código nació
+                        Soy Luchodev, un viajero apasionado por la tecnología. Mi amor por el código nació
                         durante un viaje por Sudamérica, donde conocí a desarrolladores que me mostraron el poder de la programación.
                         Hoy, me enfoco en **crear soluciones innovadoras** que faciliten la vida de las personas y transmitan mi visión del mundo.
                         Mi meta es construir **experiencias disruptivas** que inspiren y conecten a los usuarios con el futuro de la tecnología.
