@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { FaInstagram, FaLinkedin, FaFacebook, FaBars, FaTimes, FaPlus } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
+import './Navbar.css';
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,16 +29,18 @@ const Navbar = () => {
 
                 {/* Logo centrado con margen izquierdo (responsive) */}
                 <div className="flex justify-center items-center relative sm:left-[10px] md:left-[20px] lg:left-[170px] xl:left-[200px] 2xl:left-[450px] z-50">
-                    <Link href="/">
-                        <Image
-                            src="https://res.cloudinary.com/dltfsttr7/image/upload/v1734738512/sepurmadness_2020_naranja_wo9y4i_c_crop_w_400_h_225_ar_16_9_qvvfv0.png"
-                            alt="Logo"
-                            width={100}
-                            height={50}
-                            className="object-contain w-20 sm:w-24 md:w-28 lg:w-32 xl:w-24 4k:w-80"
-                            sizes="(max-width: 640px) 100px, (max-width: 1024px) 120px, (max-width: 2560px) 150px, (max-width: 3840px) 180px"
-                        />
-                    </Link>
+                    <div className="flex justify-center items-center relative custom-logo-small custom-logo-medium custom-logo-large z-50">
+                        <Link href="/">
+                            <Image
+                                src="https://res.cloudinary.com/dltfsttr7/image/upload/v1734738512/sepurmadness_2020_naranja_wo9y4i_c_crop_w_400_h_225_ar_16_9_qvvfv0.png"
+                                alt="Logo"
+                                width={100}
+                                height={50}
+                                className="object-contain w-20 sm:w-24 md:w-28 lg:w-32 xl:w-24 4k:w-80"
+                                sizes="(max-width: 640px) 100px, (max-width: 1024px) 120px, (max-width: 2560px) 150px, (max-width: 3840px) 180px"
+                            />
+                        </Link>
+                    </div>
                 </div>
 
                 {/* Menú hamburguesa (solo en pantallas pequeñas) */}
@@ -63,7 +67,7 @@ const Navbar = () => {
                             Store
                         </Link>
                         {/* Nueva opción "Contenido" */}
-                        <Link href="/proyectos" className="hover:text-naranja transition duration-300">
+                        <Link href="/contenido" className="hover:text-naranja transition duration-300">
                             Proyectos
                         </Link>
                         {/* Botón de "+" redirigiendo a Contacto */}

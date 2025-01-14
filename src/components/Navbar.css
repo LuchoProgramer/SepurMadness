@@ -1,0 +1,21 @@
+/* En tu archivo CSS */
+@media (max-width: 640px) {
+    .custom-logo-small {
+        left: -30px;
+        /* Ajuste específico para pantallas pequeñas */
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .custom-logo-medium {
+        left: 30px;
+        /* Ajuste para pantallas medianas */
+    }
+}
+
+@media (min-width: 1024px) {
+    .custom-logo-large {
+        left: 0px;
+        /* Ajuste para pantallas grandes */
+    }
+}
