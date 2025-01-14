@@ -22,15 +22,15 @@ const Perfiles = () => {
                     <PerfilCard
                         nombre="LuchoDev"
                         descripcion="Apasionado por la tecnología, creatividad y desarrollo de código."
-                        imagen="/images/lucho.jpg"
+                        imagen="https://res.cloudinary.com/dbbukhtz5/image/upload/v1736893098/lucho_deb_foto_01_dhxrko.jpg"
                         ruta="/perfiles/luchodev"
                     />
 
-                    {/* Socio */}
+                    {/* LuchoG (SkullFact) */}
                     <PerfilCard
                         nombre="SkullFact"
                         descripcion="Innovador, estratega y experto en diseño de experiencias."
-                        imagen="/images/socio.jpg"
+                        imagen="https://res.cloudinary.com/dbbukhtz5/image/upload/v1736893118/perfil_skullfact_ezsunu.jpg"
                         ruta="/perfiles/luchog"
                     />
                 </div>
