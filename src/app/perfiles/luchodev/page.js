@@ -49,7 +49,7 @@ const LuchoDev = () => {
                             href="https://www.linkedin.com/in/luchodev/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-orange-500 hover:text-white text-2xl"
+                            className="text-orange-500 hover:text-black text-2xl"
                         >
                             <FaLinkedin />
                         </a>

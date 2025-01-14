@@ -1,7 +1,7 @@
 'use client';  // Agrega esta línea al inicio del archivo
 
 import { useState } from 'react';
-import { FaInstagram, FaLinkedin, FaFacebook, FaBars, FaTimes, FaPlus } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaFacebook, FaBars, FaTimes, FaPlus, FaYoutube } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
 import './Navbar.css';
@@ -16,11 +16,11 @@ const Navbar = () => {
             <div className="w-full flex justify-between items-center p-2">
                 {/* Sección de redes sociales */}
                 <div className="flex space-x-4 sm:space-x-5">
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/sepurmadness/profilecard/?igsh=anQ2Zm5uMnp3cmF2" target="_blank" rel="noopener noreferrer">
                         <FaInstagram className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-6 xl:h-6 4k:w-16 4k:h-16 text-white hover:text-naranja transition duration-300 dark:text-black dark:hover:text-naranja bg-black bg-opacity-50 rounded-full p-1" />
                     </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <FaLinkedin className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-6 xl:h-6 4k:w-16 4k:h-16 text-white hover:text-naranja transition duration-300 dark:text-black dark:hover:text-naranja bg-black bg-opacity-50 rounded-full p-1" />
+                    <a href="https://www.youtube.com/@sepurmadness9489" target="_blank" rel="noopener noreferrer">
+                        <FaYoutube className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-6 xl:h-6 4k:w-16 4k:h-16 text-white hover:text-naranja transition duration-300 dark:text-black dark:hover:text-naranja bg-black bg-opacity-50 rounded-full p-1" />
                     </a>
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                         <FaFacebook className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-6 xl:h-6 4k:w-16 4k:h-16 text-white hover:text-naranja transition duration-300 dark:text-black dark:hover:text-naranja bg-black bg-opacity-50 rounded-full p-1" />

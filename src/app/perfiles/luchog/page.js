@@ -37,11 +37,9 @@ const LuchoG = () => {
                     <div className="mt-10">
                         <a
                             href="https://www.behance.net/luchodev"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center justify-center gap-2 text-gray-300 hover:text-orange-500 font-semibold text-lg"
+                            className="text-black hover:text-naranja font-semibold text-lg"
                         >
-                            <FaBehance className="text-2xl" />
+                            <FaBehance className="text-2xl text-b" />
                             <span>Ver mi Behance</span>
                         </a>
                     </div>
@@ -52,7 +50,7 @@ const LuchoG = () => {
                             href="https://www.linkedin.com/in/luchodev/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-300 hover:text-orange-500 text-2xl"
+                            className="text-orange-500 hover:text-black text-2xl"
                         >
                             <FaLinkedin />
                         </a>
