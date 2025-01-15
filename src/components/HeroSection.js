@@ -22,7 +22,7 @@ const HeroSection = () => {
                     <iframe
                         width="100%"
                         height="100%"
-                        src="https://www.youtube.com/embed/kuG31ZEz6Qo?autoplay=1&mute=1&loop=1&playlist=kuG31ZEz6Qo&modestbranding=1&rel=0&showinfo=0&controls=0&fs=0"
+                        src="https://res.cloudinary.com/dbbukhtz5/video/upload/v1736903857/Lanzamiento_Huella_digital_v1_FLAT_FINAL_m3qteu.mp4?autoplay=1&loop=1&mute=1"
                         frameBorder="0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
