@@ -22,9 +22,6 @@ const Navbar = () => {
                     <a href="https://www.youtube.com/@sepurmadness9489" target="_blank" rel="noopener noreferrer">
                         <FaYoutube className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-6 xl:h-6 4k:w-16 4k:h-16 text-white hover:text-naranja transition duration-300 dark:text-black dark:hover:text-naranja bg-black bg-opacity-50 rounded-full p-1" />
                     </a>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook className="w-4 h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 xl:w-6 xl:h-6 4k:w-16 4k:h-16 text-white hover:text-naranja transition duration-300 dark:text-black dark:hover:text-naranja bg-black bg-opacity-50 rounded-full p-1" />
-                    </a>
                 </div>
 
                 {/* Logo centrado con margen izquierdo (responsive) */}
