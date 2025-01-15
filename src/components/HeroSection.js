@@ -1,17 +1,34 @@
-import Image from 'next/image';
+"use client";  // Asegúrate de poner esto al principio del archivo
+
+import { useEffect, useState } from 'react';
 
 const HeroSection = () => {
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        // Ocultar el título del navegador
+        document.title = "";
+
+        // Agregar un pequeño retraso para que el video se cargue adecuadamente
+        const timeout = setTimeout(() => setIsLoaded(true), 500);
+        return () => clearTimeout(timeout);
+    }, []);
+
     return (
         <section className="relative w-full h-screen bg-black">
-            {/* Imagen de fondo */}
+            {/* Video de fondo */}
             <div className="absolute inset-0 w-full h-full">
-                <Image
-                    src="https://res.cloudinary.com/dltfsttr7/image/upload/v1736044410/WhatsApp_Image_2025-01-04_at_21.28.00_bo2hjb.jpg"
-                    alt="Nosotros"
-                    layout="fill"
-                    objectFit="cover"
-                    className="opacity-60"
-                />
+                {isLoaded && (
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://www.youtube.com/embed/kuG31ZEz6Qo?autoplay=1&mute=1&loop=1&playlist=kuG31ZEz6Qo&modestbranding=1&rel=0&showinfo=0&controls=0&fs=0"
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full object-cover opacity-60"
+                    ></iframe>
+                )}
             </div>
 
             {/* Degradado para fusión con la siguiente sección */}
@@ -19,6 +36,7 @@ const HeroSection = () => {
 
             {/* Contenido de la sección */}
             <div className="absolute inset-0 flex items-center justify-center text-white z-10">
+                {/* Aquí puedes agregar texto o cualquier contenido adicional */}
             </div>
         </section>
     );

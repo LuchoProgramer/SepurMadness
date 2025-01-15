@@ -31,7 +31,7 @@ const Perfiles = () => {
                         nombre="SkullFact"
                         descripcion="Innovador, estratega y experto en diseño de experiencias."
                         imagen="https://res.cloudinary.com/dbbukhtz5/image/upload/v1736893118/perfil_skullfact_ezsunu.jpg"
-                        ruta="/perfiles/luchog"
+                        ruta="/perfiles/skullfact"
                     />
                 </div>
             </div>

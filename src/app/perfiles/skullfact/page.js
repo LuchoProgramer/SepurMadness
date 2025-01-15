@@ -33,16 +33,6 @@ const LuchoG = () => {
                         Mi pasión es transformar ideas en historias visuales y sonoras.
                     </p>
 
-                    {/* Enlace a Behance */}
-                    <div className="mt-10">
-                        <a
-                            href="https://luchogzmnsonido59e0.myportfolio.com/"
-                            className="text-black hover:text-naranja font-semibold text-lg"
-                        >
-                            <FaBehance className="text-2xl text-b" />
-                            <span>Ver mi Behance</span>
-                        </a>
-                    </div>
 
                     {/* Redes sociales */}
                     <div className="flex justify-center gap-6 mt-8">
@@ -50,7 +40,7 @@ const LuchoG = () => {
                             href="https://www.linkedin.com/in/luis-guzm%C3%A1n-83a31893/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-orange-500 hover:text-black text-2xl"
+                            className="text-naranja hover:text-white text-2xl"
                         >
                             <FaLinkedin />
                         </a>
@@ -58,26 +48,31 @@ const LuchoG = () => {
                             href="https://www.instagram.com/skull_fact/?igsh=MWk1NzRlcm5sNnR6OA%3D%3D&utm_source=qr"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-300 hover:text-orange-500 text-2xl"
+                            className="text-naranja hover:text-white text-2xl"
                         >
                             <FaInstagram />
                         </a>
                         <a
-                            href="https://www.tiktok.com/@luchodev"
+                            href="https://www.tiktok.com/@skullfact?is_from_webapp=1&sender_device=pc"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-300 hover:text-orange-500 text-2xl"
+                            className="text-naranja hover:text-white text-2xl"
                         >
                             <FaTiktok />
                         </a>
+                    </div>
+                    {/* Enlace a Behance */}
+                    <div className="mt-10">
                         <a
-                            href="https://x.com/i/flow/login?redirect_after_login=%2Fskullfact"
-                            target="_blank"
+                            href="https://luchogzmnsonido59e0.myportfolio.com/"
+                            className="text-white hover:text-naranja font-semibold text-lg"
                             rel="noopener noreferrer"
-                            className="text-gray-300 hover:text-orange-500 text-2xl"
+                            target="_blank"  // Esto abre el enlace en una nueva pestaña
                         >
-                            <FaXTwitter />
+                            <FaBehance className="inline mr-2 text-xl" />
+                            <span>Ver mi Behance</span>
                         </a>
+
                     </div>
                 </div>
             </div>
