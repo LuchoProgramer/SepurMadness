@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaLinkedin, FaInstagram, FaTiktok, FaBehance } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaTiktok, FaBehance, FaXTwitter } from 'react-icons/fa';
 import Navbar from "@/components/Navbar";
 
 const LuchoG = () => {
@@ -36,7 +36,7 @@ const LuchoG = () => {
                     {/* Enlace a Behance */}
                     <div className="mt-10">
                         <a
-                            href="https://www.behance.net/luchodev"
+                            href="https://luchogzmnsonido59e0.myportfolio.com/"
                             className="text-black hover:text-naranja font-semibold text-lg"
                         >
                             <FaBehance className="text-2xl text-b" />
@@ -47,7 +47,7 @@ const LuchoG = () => {
                     {/* Redes sociales */}
                     <div className="flex justify-center gap-6 mt-8">
                         <a
-                            href="https://www.linkedin.com/in/luchodev/"
+                            href="https://www.linkedin.com/in/luis-guzm%C3%A1n-83a31893/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-orange-500 hover:text-black text-2xl"
@@ -55,7 +55,7 @@ const LuchoG = () => {
                             <FaLinkedin />
                         </a>
                         <a
-                            href="https://www.instagram.com/luchodev/"
+                            href="https://www.instagram.com/skull_fact/?igsh=MWk1NzRlcm5sNnR6OA%3D%3D&utm_source=qr"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-300 hover:text-orange-500 text-2xl"
@@ -69,6 +69,14 @@ const LuchoG = () => {
                             className="text-gray-300 hover:text-orange-500 text-2xl"
                         >
                             <FaTiktok />
+                        </a>
+                        <a
+                            href="https://x.com/i/flow/login?redirect_after_login=%2Fskullfact"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-300 hover:text-orange-500 text-2xl"
+                        >
+                            <FaXTwitter />
                         </a>
                     </div>
                 </div>

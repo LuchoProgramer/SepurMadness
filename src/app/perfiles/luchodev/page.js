@@ -33,7 +33,7 @@ const LuchoDev = () => {
                     {/* Enlace a GitHub */}
                     <div className="mt-10 flex items-center justify-center gap-2">
                         <a
-                            href="https://github.com/luchodev"
+                            href="https://github.com/LuchoProgramer"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-white hover:text-orange-500 font-semibold text-lg"
@@ -46,7 +46,7 @@ const LuchoDev = () => {
                     {/* Redes sociales */}
                     <div className="flex justify-center gap-6 mt-8">
                         <a
-                            href="https://www.linkedin.com/in/luchodev/"
+                            href="https://www.linkedin.com/in/luisviteri/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-orange-500 hover:text-black text-2xl"
@@ -54,7 +54,7 @@ const LuchoDev = () => {
                             <FaLinkedin />
                         </a>
                         <a
-                            href="https://www.instagram.com/luchodev/"
+                            href="https://www.instagram.com/luchonomadadigital/?igsh=MTd6bHRwYzE0bnZtcQ%3D%3D"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-orange-500 hover:text-white text-2xl"
@@ -70,7 +70,7 @@ const LuchoDev = () => {
                             <FaTiktok />
                         </a>
                         <a
-                            href="https://luchodev.com"
+                            href="https://luchodev.netlify.app"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-orange-500 hover:text-white text-2xl"
