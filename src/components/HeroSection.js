@@ -40,7 +40,7 @@ const HeroSection = () => {
                     <iframe
                         width="100%"
                         height="100%"
-                        src={`https://res.cloudinary.com/dbbukhtz5/video/upload/v1736903857/Lanzamiento_Huella_digital_v1_FLAT_FINAL_m3qteu.mp4?autoplay=${canAutoPlay && videoStarted ? 1 : 0}&loop=1&mute=1`} // Aseguramos que el video esté en mudo
+                        src={`https://res.cloudinary.com/dbbukhtz5/video/upload/v1736907972/Lanzamiento_Huella_digital_v1_FLAT_FINAL_sin_audio_z6kv8b.mp4?autoplay=${canAutoPlay && videoStarted ? 1 : 0}&loop=1&mute=1`} // Aseguramos que el video esté en mudo
                         frameBorder="0"
                         allow="autoplay; encrypted-media"
                         allowFullScreen

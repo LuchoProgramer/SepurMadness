@@ -30,22 +30,21 @@ const StorePage = () => {
             <h1 className="text-3xl font-bold mb-6 text-center">Tienda</h1>
 
             {/* 🎥 VIDEO PROMOCIONAL */}
-            <div className="mb-8 w-full">
-                <video
-                    className="w-full h-auto rounded-lg shadow-lg"
-                    controls
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                >
-                    <source
-                        src="https://res.cloudinary.com/dbbukhtz5/video/upload/f_auto/v1736465087/video_chompas_negras_pagina_web_buoyfj.mp4"
-                        type="video/mp4"
-                    />
-                    Tu navegador no soporta la reproducción de videos.
-                </video>
-            </div>
+            <video
+                className="w-full h-auto rounded-lg shadow-lg"
+                autoPlay
+                loop
+                muted
+                playsInline
+            >
+                <source
+                    src="https://res.cloudinary.com/dbbukhtz5/video/upload/v1736907972/Lanzamiento_Huella_digital_v1_FLAT_FINAL_sin_audio_z6kv8b.mp4"
+                    type="video/mp4"
+                />
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+
+
 
             {/* 🛍 LISTADO DE PRODUCTOS */}
             <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
