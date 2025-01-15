@@ -21,14 +21,15 @@ const ProjectsPage = () => {
 
                 {/* Proyecto de inventario */}
                 <div className="w-full max-w-4xl bg-gray-900 rounded-lg shadow-2xl p-8 mb-12">
-                    <h2 className="text-3xl font-bold text-white mb-4">Sistema de Inventario Inteligente</h2>
+                    <h2 className="text-3xl font-bold text-naranja mb-4">Sistema de Inventario Inteligente</h2>
                     <img
-                        src="/images/inventory-system.jpg"
+                        // Usando la URL de Cloudinary
+                        src="https://res.cloudinary.com/dbbukhtz5/image/upload/v1736909086/shopinvent_hzfzul.jpg"
                         alt="Sistema de Inventario"
                         className="w-full h-60 object-cover rounded-lg mb-6"
                     />
                     <p className="text-lg text-gray-300 mb-4">
-                        Nuestro sistema de inventario está diseñado para ayudar a las empresas a gestionar su inventario de manera eficiente y sin complicaciones. Con este sistema, las empresas pueden reducir errores, optimizar el almacenamiento y tener un control más preciso de sus productos.
+                        Nuestro sistema de inventario ayuda a las empresas a gestionar sus productos de manera eficiente, reduciendo errores, optimizando el almacenamiento y ofreciendo un control más preciso.
                     </p>
                     <ul className="text-lg text-gray-300 mb-6">
                         <li>🔹 Optimización de la gestión de productos.</li>
@@ -36,6 +37,7 @@ const ProjectsPage = () => {
                         <li>🔹 Integración con otras plataformas.</li>
                         <li>🔹 Fácil de usar y adaptar a diferentes industrias.</li>
                     </ul>
+
                     <a
                         href="/demo-inventario"
                         className="text-naranja hover:text-white font-semibold text-lg"
