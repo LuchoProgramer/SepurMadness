@@ -74,6 +74,21 @@ const LuchoG = () => {
                         </a>
 
                     </div>
+
+                    {/* Código QR clickeable */}
+                    <div className="mt-8 flex justify-center">
+                        <a
+                            href="https://qrco.de/bfAc7X" // Link del QR
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/dltfsttr7/image/upload/v1737063304/WhatsApp_Image_2025-01-16_at_16.32.24_rmclac.jpg"
+                                alt="Código QR"
+                                className="w-40 h-40 rounded-lg border-2 border-orange-500 shadow-lg hover:scale-105 transition-transform"
+                            />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
