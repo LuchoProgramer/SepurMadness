@@ -6,25 +6,28 @@ const HeroSection = () => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [videoStarted, setVideoStarted] = useState(false);
     const [canAutoPlay, setCanAutoPlay] = useState(true);
+    const [backgroundImage, setBackgroundImage] = useState("https://res.cloudinary.com/dbbukhtz5/image/upload/v1736905475/Portada_video_tu_huella_digital_personalizad_pflyxx.jpg");
 
     useEffect(() => {
         // Agregar un pequeño retraso para asegurarnos de que el video se cargue adecuadamente
         const timeout = setTimeout(() => setIsLoaded(true), 500);
         return () => clearTimeout(timeout);
+    }, []);
 
-        // Intentar autoplay en la carga
-        const videoElement = document.createElement('video');
-        videoElement.src = "https://res.cloudinary.com/dbbukhtz5/video/upload/v1736903857/Lanzamiento_Huella_digital_v1_FLAT_FINAL_m3qteu.mp4";
-        videoElement.muted = true;  // Asegurarse de que el video se inicie en modo mudo
-        videoElement.autoplay = true;
-        videoElement.loop = true;
-
-        videoElement.oncanplay = () => {
-            setCanAutoPlay(true);  // Si el video comienza a cargar, se puede hacer autoplay
+    useEffect(() => {
+        const updateBackgroundImage = () => {
+            if (window.innerWidth <= 768) {
+                setBackgroundImage("https://res.cloudinary.com/dbbukhtz5/image/upload/v1736976085/reedicionpara_portada_web_en_celulares_pcrroe.jpg");
+            } else {
+                setBackgroundImage("https://res.cloudinary.com/dbbukhtz5/image/upload/v1736905475/Portada_video_tu_huella_digital_personalizad_pflyxx.jpg");
+            }
         };
 
-        videoElement.onerror = () => {
-            setCanAutoPlay(false);  // Si el autoplay falla, activamos el modo de clic
+        updateBackgroundImage();
+        window.addEventListener("resize", updateBackgroundImage);
+
+        return () => {
+            window.removeEventListener("resize", updateBackgroundImage);
         };
     }, []);
 
@@ -34,16 +37,15 @@ const HeroSection = () => {
 
     return (
         <section className="relative w-full h-screen bg-black" onClick={handlePlayVideo}>
-            {/* Video de fondo */}
+            {/* Imagen de fondo adaptable */}
             <div className="absolute inset-0 w-full h-full">
                 {isLoaded && (
                     <img
                         width="100%"
                         height="100%"
-                        src={`https://res.cloudinary.com/dbbukhtz5/image/upload/v1736905475/Portada_video_tu_huella_digital_personalizad_pflyxx.jpg`} // Aseguramos que el video esté en mudo
-                        frameBorder="0"
+                        src={backgroundImage}
                         className="absolute inset-0 w-full h-full object-cover opacity-60"
-                    ></img>
+                    />
                 )}
             </div>
 
