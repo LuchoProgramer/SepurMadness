@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { db } from "@/lib/firebase";
 import { collection, getDocs } from "firebase/firestore";
-import Navbar from "@/components/Navbar"; // Ajusta la ruta de acuerdo a la ubicación de tu archivo Navbar
+import Navbar from "@/components/NavbarStore"; // Ajusta la ruta de acuerdo a la ubicación de tu archivo Navbar
 
 const StorePage = () => {
     const [productos, setProductos] = useState([]);
