@@ -78,6 +78,22 @@ const LuchoDev = () => {
                             <FaGlobe />
                         </a>
                     </div>
+
+                    {/* Código QR clickeable */}
+                    <div className="mt-8 flex justify-center">
+                        <a
+                            href="https://qrco.de/bfgtYi" // Link del QR
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="https://res.cloudinary.com/dltfsttr7/image/upload/v1737062795/LuchoDev_-_Viteri_uo6y0v.png"
+                                alt="Código QR"
+                                className="w-40 h-40 rounded-lg border-2 border-orange-500 shadow-lg hover:scale-105 transition-transform"
+                            />
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
