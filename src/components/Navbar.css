@@ -1,7 +1,7 @@
 /* En tu archivo CSS */
 @media (max-width: 640px) {
     .custom-logo-small {
-        left: -30px;
+        left: -12px;
         /* Ajuste específico para pantallas pequeñas */
     }
 }
