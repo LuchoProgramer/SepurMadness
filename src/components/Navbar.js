@@ -96,8 +96,8 @@ const Navbar = () => {
                         Store
                     </Link>
                     {/* Nueva opción "Contenido" en el menú móvil */}
-                    <Link href="/contenido" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
-                        Contenido
+                    <Link href="/proyectos" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
+                        Proyectos
                     </Link>
                     {/* Botón de "+" redirigiendo a Contacto */}
                     <Link href="/contacto" className="text-naranja text-lg hover:text-blanco transition duration-300" onClick={toggleMenu}>
