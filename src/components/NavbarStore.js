@@ -6,13 +6,16 @@ import Link from 'next/link';
 
 const NavbarStore = () => {
     return (
-        <nav className="navbar fixed top-5 left-0 w-full bg-transparent bg-opacity-80 z-50 px-4 lg:px-8 xl:px-12">
-            <div className="w-full flex justify-between items-center p-2">
+        <nav className="relative w-full bg-transparent bg-opacity-80 z-50 px-4 lg:px-8 xl:px-12">
+            <div className="w-full flex justify-between items-center p-2 mt-[-58px] mb-12">
 
-                {/* Icono de Casa (Inicio) */}
+                {/* Icono de Casa (Inicio) con tamaño exacto */}
                 <div>
                     <Link href="/">
-                        <FaHome className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10 text-white hover:text-naranja transition duration-300 bg-black bg-opacity-50 rounded-full p-1" />
+                        <FaHome
+                            style={{ width: '24px', height: '24px' }}  // Ajusta el tamaño aquí
+                            className="text-white hover:text-naranja transition duration-300 bg-black bg-opacity-50 rounded-full p-1"
+                        />
                     </Link>
                 </div>
 

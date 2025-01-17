@@ -27,7 +27,7 @@ const StorePage = () => {
     return (
         <div className="container mx-auto p-6 mt-20">
             <Navbar />
-            <h1 className="text-3xl font-bold mb-6 ml-[-45px] text-center">Tienda</h1>
+            <h1 className="text-3xl font-bold mb-16 ml-[-45px] text-center">Tienda</h1>
 
             {/* 🎥 VIDEO PROMOCIONAL */}
             <div className="mb-8 w-full">
