@@ -1,15 +1,15 @@
 import Nosotros from '@/components/Nosotros';
-import Navbar from '@/components/Navbar';
+import NavbarNosotros from '@/components/NavbarNosotros';
 import Contactanos from '@/components/Contactanos';  // Asegúrate de importar el componente de Contactanos
 import Contenido from '@/components/Perfiles';
 
 export default function NosotrosPage() {
     return (
         <div>
-            <Navbar />
+            <NavbarNosotros />
             <Nosotros />
             <Contenido />
-            <Contactanos />  {/* Aquí se agrega la sección de "Contáctanos" */}
+            <Contactanos />
         </div>
     );
 }

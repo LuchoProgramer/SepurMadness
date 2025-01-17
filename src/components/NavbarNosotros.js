@@ -1,15 +1,28 @@
 'use client';  // Agrega esta línea al inicio del archivo
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaInstagram, FaLinkedin, FaFacebook, FaBars, FaTimes, FaPlus, FaYoutube } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
-import './Navbar.css';
-
+import './NavbarNosotros.css';
 
 const NavbarNosotros = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isLargeScreen, setIsLargeScreen] = useState(false);
+
     const toggleMenu = () => setIsOpen(!isOpen);
+
+    // Este efecto controla el estado del tamaño de la pantalla
+    useEffect(() => {
+        const handleResize = () => {
+            setIsLargeScreen(window.innerWidth >= 1024); // Cambia el tamaño según sea necesario
+        };
+
+        handleResize(); // Verifica el tamaño inicial
+        window.addEventListener('resize', handleResize); // Añade un listener para el cambio de tamaño
+
+        return () => window.removeEventListener('resize', handleResize); // Limpia el listener al desmontar
+    }, []);
 
     return (
         <nav className="navbar fixed top-5 left-0 w-full bg-transparent bg-opacity-80 z-50 px-4 lg:px-8 xl:px-12">
@@ -45,13 +58,15 @@ const NavbarNosotros = () => {
                 </div>
 
                 {/* Menú hamburguesa (solo en pantallas pequeñas) */}
-                <button onClick={toggleMenu}>
-                    {isOpen ? (
-                        <FaTimes className="w-6 h-6" style={{ color: 'black' }} /> // Fuerzas el color negro
-                    ) : (
-                        <FaBars className="w-6 h-6" style={{ color: 'black' }} /> // Fuerzas el color negro
-                    )}
-                </button>
+                {!isLargeScreen && (
+                    <button onClick={toggleMenu}>
+                        {isOpen ? (
+                            <FaTimes className="w-6 h-6" style={{ color: 'black' }} /> // Fuerzas el color negro
+                        ) : (
+                            <FaBars className="w-6 h-6" style={{ color: 'black' }} /> // Fuerzas el color negro
+                        )}
+                    </button>
+                )}
 
                 {/* Menú de navegación (pantallas grandes) */}
                 <div className="hidden lg:flex px-2 lg:px-4 xl:px-6 text-blanco text-xs sm:text-sm md:text-base xl:text-lg 4k:text-5xl font-bold">
