@@ -1,0 +1,31 @@
+# Permitir que todos los motores de búsqueda indexen el sitio
+User-agent: *
+Allow: /
+
+# Permitir a Facebook acceder a las páginas para Open Graph
+User-agent: facebookexternalhit
+Allow: /
+
+# Permitir a Twitter acceder para Twitter Cards
+User-agent: Twitterbot
+Allow: /
+
+# Permitir a Googlebot indexar imágenes
+User-agent: Googlebot-Image
+Allow: /
+
+# Permitir a Googlebot el rastreo del sitio
+User-agent: Googlebot
+Allow: /
+
+# Bloquear el acceso a carpetas sensibles (si las tienes)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /cart/
+
+# Evitar que los motores de búsqueda indexen archivos sensibles (si los tienes)
+Disallow: /private/
+Disallow: /config/
+
+# Especificar la URL del sitemap (si tienes uno)
+Sitemap: https://sepurmadness.com/sitemap.xml
