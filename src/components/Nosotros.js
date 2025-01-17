@@ -1,6 +1,6 @@
 const Nosotros = () => {
     return (
-        <section className="relative w-full h-screen bg-gradient-to-r from-white via-gray-300 to-black flex items-center justify-center px-6 py-12">
+        <section className="relative w-full h-screen bg-white md:bg-gradient-to-r md:from-white md:via-gray-300 md:to-black flex items-center justify-center px-6 py-12">
             {/* Contenedor centrado */}
             <div className="flex flex-col justify-center items-center text-center max-w-4xl text-black space-y-6">
                 <h1 className="text-4xl md:text-6xl font-bold animate__animated animate__fadeIn animate__delay-1s">
@@ -14,8 +14,8 @@ const Nosotros = () => {
                 </p>
             </div>
 
-            {/* Degradado negro al final de la sección */}
-            <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+            {/* Degradado negro al final de la sección (solo visible en pantallas medianas o más grandes) */}
+            <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black via-transparent to-transparent hidden md:block"></div>
         </section>
     );
 };

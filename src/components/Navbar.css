@@ -19,3 +19,9 @@
         /* Ajuste para pantallas grandes */
     }
 }
+
+/* Navbar.css */
+button svg {
+    color: black !important;
+    /* Esto asegurará que el color sea negro */
+}
