@@ -1,4 +1,5 @@
-// components/Footer.js
+import Link from "next/link";
+
 const Footer = () => {
     return (
         <footer className="bg-gradient-to-r from-black via-gray-800 to-black text-white py-4">
@@ -7,18 +8,18 @@ const Footer = () => {
                     &copy; {new Date().getFullYear()} Sepurmadness. Todos los derechos reservados.
                 </p>
                 <div className="mt-2 flex justify-between px-6">
-                    <a
-                        href="#"
+                    <Link
+                        href="/politica-de-privacidad"
                         className="text-gray-400 hover:text-white text-xs"
                     >
-                        Política de privacidad
-                    </a>
-                    <a
-                        href="#"
+                        Política de Privacidad
+                    </Link>
+                    <Link
+                        href="/terminos-de-servicio"
                         className="text-gray-400 hover:text-white text-xs ml-auto"
                     >
-                        Términos y condiciones
-                    </a>
+                        Términos y Condiciones
+                    </Link>
                 </div>
             </div>
         </footer>
